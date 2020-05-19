@@ -1,47 +1,22 @@
 <template>
   <div class="home container">
-    <h1>#QuedateEnCasa</h1>
-    <h2>Nosotros te lo llevamos</h2>
+    <h1>#QuedateEnCasa lista de precios</h1>
 
-    <h3>Que es esto?</h3>
-    <p>este es...</p>
+    <h2>Compartí tu lista de precios con todos tus contactos.</h2>
 
+    <h3>De qué se trata?</h3>
+
+    <p>Si sos comerciante y debido a la cuarentena te estas adaptando a vender por redes sociales (Facebook, Whatsapp entre otros) esta aplicación puede ayudarte a compartir todos tus productos en todas tus redes.</p>
+    <p>La motivación de este proyecto es ayudar, desde mis posibilidades, a los comerciantes y emprendedores que estan tratando de buscarle la vuelta para generar ingresos en esta época tan difícil que nos toca vivir.</p>
+    <p>El uso de esta aplicación no tiene ningún tipo de costo.</p>
     <router-link :to="{
       name: 'landing',
       params: {
         company: 'Empresa Nombre',
         gdocId: gdocIdTest
-        }}">landing</router-link>
+        }}">Lista de precios de ejemplo</router-link>
 
-    <h3>Como publicar tu lista de precios?</h3>
-    <p>Para poder publicar un catalogo es muy simple, solo necesitás una planilla de datos de Google Spreadsheet con el listado de todos tus productos y sus precios y esta aplicción se encargará del resto!</p>
-
-    <h3>Paso 1 - Creá tu lista de precios</h3>
-    <p>Con tu cuenta de Gmail creá un Spreadsheet (es lo mismo que un excel) con el listado de <b>Procuctos</b> con sus respectivos precios.</p>
-    <p>También podes agregar una columna llamada <b>filtros</b> donde podés asignar una categoria a cada producto. Por ejemplo, si el producto es 'leche' se le puede asignar el filtro (o categoría) almacén. Este valor se va a usar en la aplicacion para poder filtrar los datos.</p>
-    <p>* Acá tenes una planilla de <a :href="sampleDoc" target="_blank" rel="noopener noreferrer">Google Spreadsheet</a> para que tengas de ejemplo, lo más importante es que NO cambies el nombre de las colúmnas ya que estos son usados para reconocer los datos en tu lista de precios.</p>
-    <img class="help-img" src="@/assets/sample.png">
-
-    <h3>Paso 2 - Hacé pública tu planilla en la web</h3>
-    <p>Para hacer púbica tu planilla en la web es muy simple, solo tienes que seguir estos pasos:</p>
-    <h5 class="ref">* Archivo --> Publicar en la Web</h5>
-    <img class="help-img" src="@/assets/step-1.png">
-    <h5 class="ref">* Hacer click en publicar y dar "OK"</h5>
-    <img class="help-img" src="@/assets/step-2.png">
-    <h5 class="ref">* Listo! cerrar es modal :-)</h5>
-    <img class="help-img" src="@/assets/step-3.png">
-
-    <h3>Paso 3 - Obtené la url para compartir con tu clientes</h3>
-    <p>Para esto es muy simple, solo tenes que ingresar el nombre de tu negocio y la url del Google Spreadsheet que acabas de crear con tu lista de precios</p>
-    <label for="">
-      Npmbre de tu negocio:
-      <input type="text" name="" id="">
-    </label>
-    <br>
-    <label for="">
-      Url del Google Spreadsheet:
-      <input type="text" name="" id="">
-    </label>
+    <h3><router-link :to="{name: 'howto'}">Creá tu lista de precios en 3 pasos!</router-link></h3>
   </div>
 </template>
 
@@ -59,29 +34,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-h3 {
-  margin-top: 60px;
-}
-h5.ref {
-  margin: 40px 0 10px;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-img.help-img {
-  max-width: 600px;
-  display: block;
-  margin: 0 auto;
-}
+
 </style>
